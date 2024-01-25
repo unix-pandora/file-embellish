@@ -1,0 +1,15 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.provider": "none",
+  "python.analysis.extraPaths": [
+    "./src/pivot",
+    "./src/utils",
+    "./src/public/translate",
+    "./src/public/cryptographies",
+    "./src/restoration",
+    "./src/public/binaries_file",
+    "./src/ornament"
+  ]
+}

@@ -1,0 +1,12 @@
+black
+cffi
+click
+cryptography
+mypy-extensions
+packaging
+pathspec
+platformdirs
+pycparser
+pycryptodome
+tomli
+typing_extensions
