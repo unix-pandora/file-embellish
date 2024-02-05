@@ -1,3 +1,1 @@
-security_pass = "999999"
-
-target_path = "/linux/victory/ios"
+target_path = "/path/folder/usual"

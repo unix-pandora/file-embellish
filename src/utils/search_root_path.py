@@ -1,13 +1,9 @@
 import os
-import background_setting as bg
 
 
 def check_create_directory(absolute_path):
     if not os.path.exists(absolute_path):
         os.makedirs(absolute_path)
-        # print("Directory has created")
-    # else:
-    #     print("Directory already exist")
 
 
 def find_file(filename, start_directory="."):
@@ -26,15 +22,3 @@ def find_file(filename, start_directory="."):
 
     # 递归调用，向上一级目录查找
     return find_file(filename, parent_directory)
-
-
-def recruit_root_path():
-    separate = str(os.path.sep)
-
-    final_log_dir = bg.project_root_directory + separate + bg.record_dir
-    check_create_directory(final_log_dir)
-
-    final_log_path = final_log_dir + separate
-    final_log_path += bg.json_file_name
-    # print("recruit_root_path: ", final_log_path)
-    return final_log_path

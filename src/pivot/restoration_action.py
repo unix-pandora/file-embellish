@@ -1,7 +1,5 @@
 import batch_restoration_handler as brh
 import type_history_log as thl
-import write_action as wa
-import front_reception as fr
 import change_path_methods as cpm
 import replace_bytes_context as rbc
 
@@ -15,9 +13,8 @@ def gain_information_list():
 
     filter_dir_list = brh.filter_repetitive_folder(folder_set)
 
-    wa.write_cipher_in_file(fr.security_pass, total_array)
-    thl.remember_logger(total_array, "total_array-")
-    thl.remember_logger(filter_dir_list, "filter_dir_list-")
+    thl.remember_logger(total_array, "total-array-")
+    thl.remember_logger(filter_dir_list, "filter-dir-list-")
     thl.remember_logger(files_array, "files_array-")
 
     return total_array, files_array, folder_set, filter_dir_list
@@ -34,7 +31,3 @@ def performance():
 
     # rename directory name
     cpm.revise_dir_url(filter_dirs)
-
-
-# performance()
-# gain_information_list()

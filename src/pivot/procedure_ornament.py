@@ -5,7 +5,6 @@ import revamp_batch_binary as rbb
 import amend_new_paths as anp
 import filter_duplicates as fd
 import type_history_log as thl
-import write_action as wa
 
 
 def gain_infor_tuple():
@@ -14,8 +13,8 @@ def gain_infor_tuple():
     files_url_collect = bth.gain_files_information(files_collect)
     deduplication_list = fd.gain_deduplication(files_url_collect)
 
-    thl.remember_logger(files_url_collect, "files_url_collect-")
-    thl.remember_logger(deduplication_list, "deduplication_list-")
+    thl.remember_logger(files_url_collect, "files-url-collect-")
+    thl.remember_logger(deduplication_list, "deduplication-list-")
 
     return files_url_collect, deduplication_list
 
@@ -31,10 +30,3 @@ def opereation():
 
     # ergodic, directories changed name
     anp.revise_dirname(deduplication_list)
-
-    # injects byte_string into content of file
-    wa.write_cipher_in_file(fr.security_pass, files_url_collect)
-
-
-# opereation()
-# gain_infor_tuple()

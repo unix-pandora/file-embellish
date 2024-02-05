@@ -46,10 +46,7 @@ root_file_sign = "background_setting.py"
 root_file_path = srp.find_file(root_file_sign)
 project_root_directory = os.path.dirname(root_file_path)
 
-record_dir = "RecordFolder"
-
 json_file_name = glf.forge_note_name()
-json_file_path = srp.recruit_root_path()
 
 keylength_upper_limit = 16
 

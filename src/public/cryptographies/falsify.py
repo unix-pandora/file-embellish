@@ -38,13 +38,13 @@ def des_decrypt(ciphertext, key):
 
 def test():
     key_bytes = keyword_to_bytes(fr.security_pass)
-    plaintext = "Hello, world!"
+    plaintext = "Hello, world!!!"
 
     encrypted_text = des_encrypt(plaintext, key_bytes)
-    print("encrypted_text：", encrypted_text)
+    print("encrypted_text: ", encrypted_text)
 
     decrypted_text = des_decrypt(encrypted_text, key_bytes)
-    print("decrypted_text：", decrypted_text)
+    print("decrypted_text: ", decrypted_text)
 
 
 # test()
